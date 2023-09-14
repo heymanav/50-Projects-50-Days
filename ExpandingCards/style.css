@@ -1,0 +1,153 @@
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Playfair+Display:wght@500&family=Roboto:wght@400;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url('https://e0.pxfuel.com/wallpapers/105/6/desktop-wallpaper-evil-smile-px-111-91-kb-black-smile.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+h1 {
+    font-size: 5vw;
+    font-family: 'Luckiest Guy';
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-shadow:   0px -6px 0 #212121,  
+                   0px -6px 0 #212121,
+                   0px  6px 0 #212121,
+                   0px  6px 0 #212121,
+                  -6px  0px 0 #212121,  
+                   6px  0px 0 #212121,
+                  -6px  0px 0 #212121,
+                   6px  0px 0 #212121,
+                  -6px -6px 0 #212121,  
+                   6px -6px 0 #212121,
+                  -6px  6px 0 #212121,
+                   6px  6px 0 #212121,
+                  -6px  18px 0 #212121,
+                   0px  18px 0 #212121,
+                   6px  18px 0 #212121,
+                   0 19px 1px rgba(0,0,0,.1),
+                   0 0 6px rgba(0,0,0,.1),
+                   0 6px 3px rgba(0,0,0,.3),
+                   0 12px 6px rgba(0,0,0,.2),
+                   0 18px 18px rgba(0,0,0,.25),
+                   0 24px 24px rgba(0,0,0,.2),
+                   0 36px 36px rgba(0,0,0,.15);
+  }
+  h1:hover{
+    color: darkred;
+    font-size: 11vw;
+  }
+  h3.header{
+    font-size: 2.5vw;
+    color: #fff;
+    font-family: 'Luckiest Guy';
+ }
+ h3.header:hover{
+    color: darkred;
+    transform: scale(2);
+  }
+  .btn{
+    font-size: 2vw;
+    font-family: 'Luckiest Guy';
+    color: #212121;
+    padding: 8px 16px;
+    border: 5px solid #212121;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: darkred;
+    transform: scale(2);
+}
+.container{
+    display: flex;
+    width: 90vw;
+}
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 5px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+
+}
+.panel:hover{
+    flex: 1;
+}
+.panel h3{
+    font-size: 50px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    color: #fff;
+    font-family: 'Luckiest Guy';
+}
+.panel.active{
+    flex: 4;
+    border-radius: 0%;
+}
+.panel.active h3{
+    opacity: 1;
+    padding-left: 20px;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow:   0px -6px 0 #212121,  
+                 0px -6px 0 #212121,
+                 0px  6px 0 #212121,
+                 0px  6px 0 #212121,
+                -6px  0px 0 #212121,  
+                 6px  0px 0 #212121,
+                -6px  0px 0 #212121,
+                 6px  0px 0 #212121,
+                -6px -6px 0 #212121,  
+                 6px -6px 0 #212121,
+                -6px  6px 0 #212121,
+                 6px  6px 0 #212121,
+                -6px  18px 0 #212121,
+                 0px  18px 0 #212121,
+                 6px  18px 0 #212121,
+                 0 19px 1px rgba(0,0,0,.1),
+                 0 0 6px rgba(0,0,0,.1),
+                 0 6px 3px rgba(0,0,0,.3),
+                 0 12px 6px rgba(0,0,0,.2),
+                 0 18px 18px rgba(0,0,0,.25),
+                 0 24px 24px rgba(0,0,0,.2),
+                 0 36px 36px rgba(0,0,0,.15);
+}
+.panel.active h3:hover{
+    color: darkred;
+}
+@media (max-width: 700px) {
+    .container {
+      width: 100vw;
+    }
+  
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5) {
+      display: none;
+    }
+}
+
